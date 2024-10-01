@@ -18,7 +18,13 @@ int main() {
 
         int acertou = (chute == numero_secreto);
 
-        if (acertou) {
+        if(chute < 0) {
+            printf("Você não pode chutar números negativos\n");
+            i--;
+        } 
+
+
+        else if(acertou) {
             printf("Parabéns! Você acertou!\n");
             printf("Jogue de novo, você é um bom jogador!\n");
             break;
